@@ -1,4 +1,4 @@
-const { v4: uuidv4 } = require('uuid');
+import uuidv4 from 'uuid/v4';
 
 exports.generateId = () => {
     return uuidv4();
