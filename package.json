@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "netlify-lambda serve netlify/functions",
+    "build": "netlify-lambda build netlify/functions"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@netlify/functions": "^3.1.10",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -18,6 +19,9 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.15.1",
     "morgan": "^1.10.0",
+    "netlify-cli": "^21.5.0",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0",
     "uuid": "^11.1.0"
   }
 }
