@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "netlify-lambda serve netlify/functions",
-    "build": "netlify-lambda build netlify/functions"
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC",

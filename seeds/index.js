@@ -7,6 +7,15 @@ import OffDay from '../models/offDayModel.js';
 import Booking from '../models/bookingModel.js';
 import GuestBooking from '../models/GuestBookingModel.js';
 import Rebate from '../models/rebateModel.js';
+import React from 'react'
+
+const index = () => {
+    return (
+        <div>index</div>
+    )
+}
+
+export default index
 
 const seedData = async () => {
     try {
