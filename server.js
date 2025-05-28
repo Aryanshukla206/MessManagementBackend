@@ -61,6 +61,10 @@ const startServer = async () => {
         });
     });
 
+    app.get('/', (req, res) => {
+        res.send('API is running...');
+    });
+
     // 7. Start server
     const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
