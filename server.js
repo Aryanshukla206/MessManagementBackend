@@ -27,12 +27,12 @@ const startServer = async () => {
     const app = express();
 
     // Allow requests from your React app's origin
-    const corsOptions = {
-        origin: ['https://jubileehallmess.netlify.app', "https://jubileehallmess.netlify.app/"],
-    };
+    // const corsOptions = {
+    //     origin: ['https://jubileehallmess.netlify.app', "https://jubileehallmess.netlify.app/"],
+    // };
 
     // 3. Global middleware
-    app.use(cors(corsOptions));
+    app.use(cors({ origin: "**" })); // Allow all origins for development; restrict in production
     app.use(express.json());
     if (process.env.NODE_ENV === 'development') {
         app.use(morgan('dev'));
