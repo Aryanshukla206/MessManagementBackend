@@ -27,9 +27,10 @@ const startServer = async () => {
     const app = express();
 
     // Allow requests from your React app's origin
-    app.use(cors({
-        origin: 'https://jubileehallmess.netlify.app', // Replace with your frontend URL
-    }));
+    const corsOptions = {
+        origin: ['https://jubileehallmess.netlify.app', "https://jubileehallmess.netlify.app/"],
+    };
+
     // 3. Global middleware
     app.use(cors(corsOptions));
     app.use(express.json());
