@@ -2,8 +2,9 @@
   "name": "messbackend",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "build": "vite build"
+    "start": "vite build"
   },
   "author": "",
   "license": "ISC",
